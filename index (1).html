@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGNREGA Maharashtra - Our Voice, Our Rights</title>
+    <style>
+        :root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-base: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 28px;
+  --font-size-3xl: 32px;
+  --font-size-4xl: 40px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  --radius-base: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(167, 169, 169, 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-border: rgba(119, 124, 124, 0.3);
+    --color-card-border: rgba(119, 124, 124, 0.2);
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-16);
+}
+
+/* Header */
+.header {
+    background-color: var(--color-surface);
+    border-bottom: 2px solid var(--color-primary);
+    padding: var(--space-16) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow-sm);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-16);
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-12);
+    flex: 1;
+}
+
+.logo {
+    font-size: var(--font-size-3xl);
+}
+
+.title-text h1 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    line-height: 1.2;
+}
+
+.title-text p {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-12);
+}
+
+.lang-toggle {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: var(--space-12) var(--space-20);
+    border-radius: var(--radius-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 60px;
+    min-width: 80px;
+}
+
+.lang-toggle:hover {
+    background: var(--color-primary-hover);
+    transform: translateY(-2px);
+}
+
+.back-btn {
+    background: var(--color-bg-1);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    padding: var(--space-12) var(--space-20);
+    border-radius: var(--radius-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+}
+
+.back-btn:hover {
+    background: var(--color-bg-2);
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+.main-content {
+    padding: var(--space-32) 0;
+    min-height: calc(100vh - 200px);
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+/* Landing Page */
+.hero {
+    text-align: center;
+    padding: var(--space-32) 0;
+}
+
+.hero h2 {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--space-24);
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-32);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-box {
+    background: var(--color-bg-1);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-24);
+    margin-bottom: var(--space-32);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-box h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-16);
+    color: var(--color-primary);
+}
+
+.info-box p {
+    font-size: var(--font-size-lg);
+    line-height: 1.8;
+    margin-bottom: var(--space-12);
+}
+
+.cta-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-24);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cta-btn {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: var(--space-24) var(--space-32);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-12);
+    box-shadow: var(--shadow-md);
+}
+
+.cta-btn:hover {
+    background: var(--color-primary-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-btn .icon {
+    font-size: var(--font-size-4xl);
+}
+
+.cta-btn.secondary {
+    background: var(--color-bg-3);
+    color: var(--color-text);
+    border: 2px solid var(--color-primary);
+}
+
+.cta-btn.secondary:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* District Selection */
+.search-box {
+    margin-bottom: var(--space-32);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    width: 100%;
+    padding: var(--space-20);
+    font-size: var(--font-size-xl);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+    color: var(--color-text);
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(33, 128, 141, 0.1);
+}
+
+.districts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--space-16);
+    margin-top: var(--space-24);
+}
+
+.district-card {
+    background: var(--color-surface);
+    border: 2px solid var(--color-card-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-24);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-8);
+}
+
+.district-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.district-card .name-en {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text);
+}
+
+.district-card .name-mr {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+}
+
+/* Dashboard */
+.dashboard-header {
+    text-align: center;
+    margin-bottom: var(--space-32);
+    padding: var(--space-24);
+    background: var(--color-bg-1);
+    border-radius: var(--radius-lg);
+}
+
+.dashboard-header h2 {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--space-8);
+}
+
+.dashboard-header p {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-24);
+    margin-bottom: var(--space-32);
+}
+
+.metric-card {
+    background: var(--color-surface);
+    border: 2px solid var(--color-card-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-24);
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.metric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.metric-card.good {
+    border-color: var(--color-success);
+    background: rgba(34, 197, 94, 0.05);
+}
+
+.metric-card.average {
+    border-color: var(--color-warning);
+    background: rgba(245, 158, 11, 0.05);
+}
+
+.metric-card.poor {
+    border-color: var(--color-danger);
+    background: rgba(239, 68, 68, 0.05);
+}
+
+.metric-icon {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--space-12);
+}
+
+.metric-label {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-8);
+}
+
+.metric-value {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text);
+    margin-bottom: var(--space-8);
+}
+
+.metric-trend {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+}
+
+.metric-trend.up {
+    color: var(--color-success);
+}
+
+.metric-trend.down {
+    color: var(--color-danger);
+}
+
+.dashboard-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-16);
+    margin-top: var(--space-32);
+}
+
+.action-btn {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: var(--space-20) var(--space-24);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-12);
+}
+
+.action-btn:hover {
+    background: var(--color-primary-hover);
+    transform: translateY(-2px);
+}
+
+.action-btn .icon {
+    font-size: var(--font-size-2xl);
+}
+
+/* Historical View */
+.chart-controls {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-12);
+    margin-bottom: var(--space-32);
+    flex-wrap: wrap;
+}
+
+.metric-toggle {
+    background: var(--color-bg-1);
+    color: var(--color-text);
+    border: 2px solid var(--color-border);
+    padding: var(--space-12) var(--space-20);
+    border-radius: var(--radius-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 60px;
+}
+
+.metric-toggle.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
+.metric-toggle:hover {
+    transform: translateY(-2px);
+}
+
+.chart-container {
+    background: var(--color-surface);
+    border: 2px solid var(--color-card-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-24);
+    margin-bottom: var(--space-24);
+    height: 400px;
+}
+
+/* Comparison View */
+.comparison-selector {
+    background: var(--color-bg-1);
+    border-radius: var(--radius-lg);
+    padding: var(--space-24);
+    margin-bottom: var(--space-32);
+}
+
+.comparison-selector h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-16);
+    text-align: center;
+}
+
+.district-checkboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-12);
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+    padding: var(--space-12);
+    background: var(--color-surface);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-base);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: var(--font-size-base);
+}
+
+.checkbox-label:hover {
+    border-color: var(--color-primary);
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.checkbox-label.checked {
+    background: var(--color-bg-3);
+    border-color: var(--color-primary);
+}
+
+.compare-btn {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: var(--space-16) var(--space-32);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: var(--space-16);
+    min-height: 70px;
+}
+
+.compare-btn:hover {
+    background: var(--color-primary-hover);
+}
+
+.compare-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Loading */
+.loading {
+    text-align: center;
+    padding: var(--space-32);
+}
+
+.spinner {
+    border: 4px solid var(--color-border);
+    border-top: 4px solid var(--color-primary);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto var(--space-16);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading p {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-secondary);
+}
+
+/* Error */
+.error-message {
+    background: rgba(239, 68, 68, 0.1);
+    border: 2px solid var(--color-danger);
+    border-radius: var(--radius-lg);
+    padding: var(--space-24);
+    text-align: center;
+    margin: var(--space-24) auto;
+    max-width: 600px;
+}
+
+.error-message p {
+    font-size: var(--font-size-lg);
+    color: var(--color-danger);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Tooltip */
+.tooltip-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    cursor: help;
+    margin-left: var(--space-8);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    background-color: var(--color-text);
+    color: white;
+    text-align: center;
+    border-radius: var(--radius-base);
+    padding: var(--space-12);
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Footer */
+.footer {
+    background: var(--color-surface);
+    border-top: 2px solid var(--color-border);
+    padding: var(--space-24) 0;
+    text-align: center;
+    margin-top: var(--space-32);
+}
+
+.footer p {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .header-title {
+        justify-content: center;
+    }
+
+    .header-actions {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .districts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .districts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="header-title">
+                <div class="logo">🏛️</div>
+                <div class="title-text">
+                    <h1 id="headerTitle">MGNREGA Maharashtra</h1>
+                    <p id="headerSubtitle">Our Voice, Our Rights</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button id="backBtn" class="back-btn hidden">
+                    <span>←</span>
+                    <span id="backBtnText">Back</span>
+                </button>
+                <button id="langToggle" class="lang-toggle">मराठी</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Landing View -->
+            <div id="landingView" class="view active">
+                <div class="hero">
+                    <h2 id="welcomeTitle">Welcome to MGNREGA Maharashtra</h2>
+                    <p class="hero-subtitle" id="welcomeSubtitle">Check your district's performance in the Mahatma Gandhi National Rural Employment Guarantee Scheme</p>
+                    
+                    <div class="info-box">
+                        <h3 id="aboutTitle">What is MGNREGA?</h3>
+                        <p id="aboutText">MGNREGA is a government program that guarantees 100 days of employment per year to rural households. It provides work to those who need it and helps build rural infrastructure.</p>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <button id="findDistrictBtn" class="cta-btn">
+                            <span class="icon">📍</span>
+                            <span id="findDistrictText">Find My District</span>
+                        </button>
+                        <button id="chooseDistrictBtn" class="cta-btn secondary">
+                            <span class="icon">🗺️</span>
+                            <span id="chooseDistrictText">Choose District</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- District Selection View -->
+            <div id="districtSelectionView" class="view">
+                <div class="search-box">
+                    <input type="text" id="districtSearch" class="search-input" placeholder="Search district...">
+                </div>
+                <div id="districtsGrid" class="districts-grid"></div>
+            </div>
+
+            <!-- Dashboard View -->
+            <div id="dashboardView" class="view">
+                <div class="dashboard-header">
+                    <h2 id="districtName"></h2>
+                    <p id="currentMonth"></p>
+                </div>
+
+                <div class="metrics-grid" id="metricsGrid"></div>
+
+                <div class="dashboard-actions">
+                    <button id="viewHistoryBtn" class="action-btn">
+                        <span class="icon">📊</span>
+                        <span id="viewHistoryText">View Past Performance</span>
+                    </button>
+                    <button id="compareBtn" class="action-btn">
+                        <span class="icon">📈</span>
+                        <span id="compareBtnText">Compare Districts</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Historical View -->
+            <div id="historicalView" class="view">
+                <div class="dashboard-header">
+                    <h2 id="historyDistrictName"></h2>
+                    <p id="historyTitle">Past 6 Months Performance</p>
+                </div>
+
+                <div class="chart-controls" id="chartControls"></div>
+                <div class="chart-container">
+                    <canvas id="historyChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Comparison View -->
+            <div id="comparisonView" class="view">
+                <div class="dashboard-header">
+                    <h2 id="comparisonTitle">Compare Districts</h2>
+                    <p id="comparisonSubtitle">Select up to 3 districts to compare</p>
+                </div>
+
+                <div class="comparison-selector">
+                    <h3 id="selectDistrictsText">Select Districts:</h3>
+                    <div class="district-checkboxes" id="comparisonCheckboxes"></div>
+                    <button id="showComparisonBtn" class="compare-btn" disabled>
+                        <span id="showComparisonText">Show Comparison</span>
+                    </button>
+                </div>
+
+                <div id="comparisonChartContainer" class="hidden">
+                    <div class="chart-container">
+                        <canvas id="comparisonChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading -->
+            <div id="loadingView" class="view">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p id="loadingText">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p id="footerText">&copy; 2025 MGNREGA Maharashtra - Empowering Rural India</p>
+        </div>
+    </footer>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Main JavaScript -->
+    <script>
+        // Application State
+        const state = {
+            currentView: 'landing',
+            currentLanguage: 'en',
+            selectedDistrict: null,
+            selectedMetric: 'workers',
+            comparisonDistricts: [],
+            viewHistory: []
+        };
+
+        // Translations
+        const translations = {
+            en: {
+                headerTitle: 'MGNREGA Maharashtra',
+                headerSubtitle: 'Our Voice, Our Rights',
+                backBtnText: 'Back',
+                welcomeTitle: 'Welcome to MGNREGA Maharashtra',
+                welcomeSubtitle: 'Check your district\'s performance in the Mahatma Gandhi National Rural Employment Guarantee Scheme',
+                aboutTitle: 'What is MGNREGA?',
+                aboutText: 'MGNREGA is a government program that guarantees 100 days of employment per year to rural households. It provides work to those who need it and helps build rural infrastructure.',
+                findDistrictText: 'Find My District',
+                chooseDistrictText: 'Choose District',
+                searchPlaceholder: 'Search district...',
+                currentMonth: 'Current Month: March 2025',
+                viewHistoryText: 'View Past Performance',
+                compareBtnText: 'Compare Districts',
+                historyTitle: 'Past 6 Months Performance',
+                comparisonTitle: 'Compare Districts',
+                comparisonSubtitle: 'Select up to 3 districts to compare',
+                selectDistrictsText: 'Select Districts:',
+                showComparisonText: 'Show Comparison',
+                loadingText: 'Loading...',
+                footerText: '© 2025 MGNREGA Maharashtra - Empowering Rural India',
+                workersLabel: 'Workers Employed',
+                wagesLabel: 'Wages Paid',
+                daysLabel: 'Days of Work',
+                jobCardsLabel: 'Job Cards Issued',
+                workersTooltip: 'Number of people who got work this month',
+                wagesTooltip: 'Total money paid as wages to workers',
+                daysTooltip: 'Total days of employment provided',
+                jobCardsTooltip: 'Job Cards are documents that allow rural households to request work under MGNREGA',
+                detectingLocation: 'Detecting your location...',
+                locationDetected: 'Location detected!',
+                locationError: 'Could not detect location. Please choose manually.',
+                workers: 'Workers',
+                wages: 'Wages',
+                days: 'Days Worked',
+                jobCards: 'Job Cards'
+            },
+            mr: {
+                headerTitle: 'मनरेगा महाराष्ट्र',
+                headerSubtitle: 'आमचा आवाज, आमचे अधिकार',
+                backBtnText: 'मागे',
+                welcomeTitle: 'मनरेगा महाराष्ट्र मध्ये आपले स्वागत आहे',
+                welcomeSubtitle: 'महात्मा गांधी राष्ट्रीय ग्रामीण रोजगार हमी योजनेत आपल्या जिल्ह्याचे कार्यप्रदर्शन तपासा',
+                aboutTitle: 'मनरेगा म्हणजे काय?',
+                aboutText: 'मनरेगा हा एक सरकारी कार्यक्रम आहे जो ग्रामीण कुटुंबांना दरवर्षी १०० दिवसांच्या रोजगाराची हमी देतो. हा त्यांना काम प्रदान करतो ज्यांना त्याची गरज आहे आणि ग्रामीण पायाभूत सुविधा बांधण्यास मदत करतो.',
+                findDistrictText: 'माझा जिल्हा शोधा',
+                chooseDistrictText: 'जिल्हा निवडा',
+                searchPlaceholder: 'जिल्हा शोधा...',
+                currentMonth: 'चालू महिना: मार्च २०२५',
+                viewHistoryText: 'मागील कार्यप्रदर्शन पहा',
+                compareBtnText: 'जिल्ह्यांची तुलना करा',
+                historyTitle: 'मागील ६ महिन्यांचे कार्यप्रदर्शन',
+                comparisonTitle: 'जिल्ह्यांची तुलना करा',
+                comparisonSubtitle: 'तुलना करण्यासाठी ३ पर्यंत जिल्हे निवडा',
+                selectDistrictsText: 'जिल्हे निवडा:',
+                showComparisonText: 'तुलना दाखवा',
+                loadingText: 'लोड होत आहे...',
+                footerText: '© २०२५ मनरेगा महाराष्ट्र - ग्रामीण भारताला सशक्त करणे',
+                workersLabel: 'कामगार रोजगारावर',
+                wagesLabel: 'वेतन दिले',
+                daysLabel: 'कामाचे दिवस',
+                jobCardsLabel: 'जॉब कार्ड जारी',
+                workersTooltip: 'या महिन्यात कामावर गेलेल्या लोकांची संख्या',
+                wagesTooltip: 'कामगारांना वेतन म्हणून दिलेला एकूण पैसा',
+                daysTooltip: 'एकूण दिवस रोजगार दिला',
+                jobCardsTooltip: 'जॉब कार्ड हे दस्तऐवज आहेत जे ग्रामीण कुटुंबांना मनरेगा अंतर्गत काम मागण्यास परवानगी देतात',
+                detectingLocation: 'तुमचे स्थान शोधत आहे...',
+                locationDetected: 'स्थान आढळले!',
+                locationError: 'स्थान शोधू शकलो नाही. कृपया स्वतः निवडा.',
+                workers: 'कामगार',
+                wages: 'वेतन',
+                days: 'काम केलेले दिवस',
+                jobCards: 'जॉब कार्ड'
+            }
+        };
+
+        // Districts Data
+        const districts = [
+            { name_en: 'Ahmednagar', name_mr: 'अहमदनगर', lat: 19.0948, lon: 74.7480 },
+            { name_en: 'Akola', name_mr: 'अकोला', lat: 20.7002, lon: 77.0082 },
+            { name_en: 'Amravati', name_mr: 'अमरावती', lat: 20.9374, lon: 77.7796 },
+            { name_en: 'Aurangabad', name_mr: 'औरंगाबाद', lat: 19.8762, lon: 75.3433 },
+            { name_en: 'Beed', name_mr: 'बीड', lat: 18.9894, lon: 75.7585 },
+            { name_en: 'Bhandara', name_mr: 'भंडारा', lat: 21.1704, lon: 79.6552 },
+            { name_en: 'Buldhana', name_mr: 'बुलडाणा', lat: 20.5311, lon: 76.1847 },
+            { name_en: 'Chandrapur', name_mr: 'चंद्रपूर', lat: 19.9615, lon: 79.2961 },
+            { name_en: 'Dhule', name_mr: 'धुळे', lat: 20.9042, lon: 74.7749 },
+            { name_en: 'Gadchiroli', name_mr: 'गडचिरोली', lat: 20.1809, lon: 80.0199 },
+            { name_en: 'Gondia', name_mr: 'गोंदिया', lat: 21.4573, lon: 80.1952 },
+            { name_en: 'Hingoli', name_mr: 'हिंगोली', lat: 19.7156, lon: 77.1547 },
+            { name_en: 'Jalgaon', name_mr: 'जळगाव', lat: 21.0077, lon: 75.5626 },
+            { name_en: 'Jalna', name_mr: 'जालना', lat: 19.8347, lon: 75.8800 },
+            { name_en: 'Kolhapur', name_mr: 'कोल्हापूर', lat: 16.7050, lon: 74.2433 },
+            { name_en: 'Latur', name_mr: 'लातूर', lat: 18.3983, lon: 76.5604 },
+            { name_en: 'Mumbai City', name_mr: 'मुंबई शहर', lat: 18.9750, lon: 72.8258 },
+            { name_en: 'Mumbai Suburban', name_mr: 'मुंबई उपनगर', lat: 19.1136, lon: 72.8697 },
+            { name_en: 'Nagpur', name_mr: 'नागपूर', lat: 21.1458, lon: 79.0882 },
+            { name_en: 'Nanded', name_mr: 'नांदेड', lat: 19.1383, lon: 77.3210 },
+            { name_en: 'Nandurbar', name_mr: 'नंदुरबार', lat: 21.3667, lon: 74.2333 },
+            { name_en: 'Nashik', name_mr: 'नाशिक', lat: 19.9975, lon: 73.7898 },
+            { name_en: 'Osmanabad', name_mr: 'उस्मानाबाद', lat: 18.1774, lon: 76.0405 },
+            { name_en: 'Palghar', name_mr: 'पालघर', lat: 19.6967, lon: 72.7642 },
+            { name_en: 'Parbhani', name_mr: 'परभणी', lat: 19.2608, lon: 76.7761 },
+            { name_en: 'Pune', name_mr: 'पुणे', lat: 18.5204, lon: 73.8567 },
+            { name_en: 'Raigad', name_mr: 'रायगड', lat: 18.5204, lon: 73.0200 },
+            { name_en: 'Ratnagiri', name_mr: 'रत्नागिरी', lat: 16.9944, lon: 73.3000 },
+            { name_en: 'Sangli', name_mr: 'सांगली', lat: 16.8524, lon: 74.5815 },
+            { name_en: 'Satara', name_mr: 'सातारा', lat: 17.6805, lon: 73.9903 },
+            { name_en: 'Sindhudurg', name_mr: 'सिंधुदुर्ग', lat: 16.0000, lon: 73.5000 },
+            { name_en: 'Solapur', name_mr: 'सोलापूर', lat: 17.6599, lon: 75.9064 },
+            { name_en: 'Thane', name_mr: 'ठाणे', lat: 19.2183, lon: 72.9781 },
+            { name_en: 'Wardha', name_mr: 'वर्धा', lat: 20.7453, lon: 78.6022 },
+            { name_en: 'Washim', name_mr: 'वाशिम', lat: 20.1097, lon: 77.1331 },
+            { name_en: 'Yavatmal', name_mr: 'यवतमाळ', lat: 20.3897, lon: 78.1211 }
+        ];
+
+        // Generate sample data for all districts
+        function generateDistrictData() {
+            const months = ['Oct 2024', 'Nov 2024', 'Dec 2024', 'Jan 2025', 'Feb 2025', 'Mar 2025'];
+            const data = {};
+
+            districts.forEach(district => {
+                const baseWorkers = Math.floor(Math.random() * 140000) + 40000;
+                const baseWages = Math.floor(Math.random() * 250) + 50;
+                const baseDays = Math.floor(Math.random() * 70) + 10;
+                const baseJobCards = Math.floor(Math.random() * 150000) + 50000;
+
+                data[district.name_en] = months.map((month, index) => {
+                    const variation = 0.8 + (Math.random() * 0.4);
+                    return {
+                        month: month,
+                        job_cards_issued: Math.floor(baseJobCards * variation),
+                        households_demanded_work: Math.floor(baseWorkers * 0.8 * variation),
+                        persons_worked: Math.floor(baseWorkers * variation),
+                        wage_payments: Math.floor(baseWages * variation),
+                        total_days_worked: Math.floor(baseDays * variation)
+                    };
+                });
+            });
+
+            return data;
+        }
+
+        const districtData = generateDistrictData();
+
+        // Helper Functions
+        function t(key) {
+            return translations[state.currentLanguage][key] || key;
+        }
+
+        function updateTranslations() {
+            document.querySelectorAll('[id]').forEach(el => {
+                const key = el.id;
+                if (translations[state.currentLanguage][key]) {
+                    if (el.tagName === 'INPUT') {
+                        el.placeholder = t('searchPlaceholder');
+                    } else {
+                        el.textContent = t(key);
+                    }
+                }
+            });
+        }
+
+        function showView(viewName) {
+            document.querySelectorAll('.view').forEach(view => {
+                view.classList.remove('active');
+            });
+
+            const viewMap = {
+                'landing': 'landingView',
+                'districtSelection': 'districtSelectionView',
+                'dashboard': 'dashboardView',
+                'historical': 'historicalView',
+                'comparison': 'comparisonView',
+                'loading': 'loadingView'
+            };
+
+            const viewId = viewMap[viewName];
+            if (viewId) {
+                document.getElementById(viewId).classList.add('active');
+                state.currentView = viewName;
+                
+                // Show/hide back button
+                const backBtn = document.getElementById('backBtn');
+                if (viewName === 'landing') {
+                    backBtn.classList.add('hidden');
+                } else {
+                    backBtn.classList.remove('hidden');
+                }
+            }
+        }
+
+        function getPerformanceClass(value, max) {
+            const percentage = (value / max) * 100;
+            if (percentage >= 75) return 'good';
+            if (percentage >= 50) return 'average';
+            return 'poor';
+        }
+
+        function getTrend(current, previous) {
+            if (current > previous) return { class: 'up', symbol: '↑' };
+            if (current < previous) return { class: 'down', symbol: '↓' };
+            return { class: '', symbol: '→' };
+        }
+
+        function formatNumber(num) {
+            if (num >= 10000000) return (num / 10000000).toFixed(2) + ' Cr';
+            if (num >= 100000) return (num / 100000).toFixed(2) + ' L';
+            if (num >= 1000) return (num / 1000).toFixed(2) + ' K';
+            return num.toString();
+        }
+
+        function formatCurrency(num) {
+            return '₹ ' + formatNumber(num * 10000000);
+        }
+
+        // Geolocation
+        function findNearestDistrict(lat, lon) {
+            let nearest = null;
+            let minDistance = Infinity;
+
+            districts.forEach(district => {
+                const distance = Math.sqrt(
+                    Math.pow(district.lat - lat, 2) + Math.pow(district.lon - lon, 2)
+                );
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    nearest = district;
+                }
+            });
+
+            return nearest;
+        }
+
+        function handleFindDistrict() {
+            if (!navigator.geolocation) {
+                alert(t('locationError'));
+                showView('districtSelection');
+                return;
+            }
+
+            showView('loading');
+            document.getElementById('loadingText').textContent = t('detectingLocation');
+
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const { latitude, longitude } = position.coords;
+                    const nearest = findNearestDistrict(latitude, longitude);
+                    
+                    document.getElementById('loadingText').textContent = t('locationDetected');
+                    
+                    setTimeout(() => {
+                        state.selectedDistrict = nearest.name_en;
+                        showDashboard();
+                    }, 500);
+                },
+                (error) => {
+                    alert(t('locationError'));
+                    showView('districtSelection');
+                }
+            );
+        }
+
+        // District Selection
+        function renderDistrictGrid() {
+            const grid = document.getElementById('districtsGrid');
+            const searchTerm = document.getElementById('districtSearch').value.toLowerCase();
+
+            const filteredDistricts = districts.filter(district => {
+                const nameEn = district.name_en.toLowerCase();
+                const nameMr = district.name_mr.toLowerCase();
+                return nameEn.includes(searchTerm) || nameMr.includes(searchTerm);
+            });
+
+            grid.innerHTML = filteredDistricts.map(district => `
+                <div class="district-card" data-district="${district.name_en}">
+                    <div class="name-en">${district.name_en}</div>
+                    <div class="name-mr">${district.name_mr}</div>
+                </div>
+            `).join('');
+
+            // Add click handlers
+            grid.querySelectorAll('.district-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    state.selectedDistrict = card.dataset.district;
+                    showDashboard();
+                });
+            });
+        }
+
+        // Dashboard
+        function showDashboard() {
+            const data = districtData[state.selectedDistrict];
+            const currentData = data[data.length - 1];
+            const previousData = data[data.length - 2];
+
+            const district = districts.find(d => d.name_en === state.selectedDistrict);
+            const districtName = state.currentLanguage === 'en' ? district.name_en : district.name_mr;
+
+            document.getElementById('districtName').textContent = districtName;
+            document.getElementById('currentMonth').textContent = t('currentMonth');
+
+            const metrics = [
+                {
+                    icon: '👥',
+                    label: t('workersLabel'),
+                    value: formatNumber(currentData.persons_worked),
+                    trend: getTrend(currentData.persons_worked, previousData.persons_worked),
+                    performance: getPerformanceClass(currentData.persons_worked, 180000),
+                    tooltip: t('workersTooltip')
+                },
+                {
+                    icon: '💰',
+                    label: t('wagesLabel'),
+                    value: formatCurrency(currentData.wage_payments),
+                    trend: getTrend(currentData.wage_payments, previousData.wage_payments),
+                    performance: getPerformanceClass(currentData.wage_payments, 300),
+                    tooltip: t('wagesTooltip')
+                },
+                {
+                    icon: '📅',
+                    label: t('daysLabel'),
+                    value: formatNumber(currentData.total_days_worked * 100000),
+                    trend: getTrend(currentData.total_days_worked, previousData.total_days_worked),
+                    performance: getPerformanceClass(currentData.total_days_worked, 80),
+                    tooltip: t('daysTooltip')
+                },
+                {
+                    icon: '📋',
+                    label: t('jobCardsLabel'),
+                    value: formatNumber(currentData.job_cards_issued),
+                    trend: getTrend(currentData.job_cards_issued, previousData.job_cards_issued),
+                    performance: getPerformanceClass(currentData.job_cards_issued, 200000),
+                    tooltip: t('jobCardsTooltip')
+                }
+            ];
+
+            const metricsGrid = document.getElementById('metricsGrid');
+            metricsGrid.innerHTML = metrics.map(metric => `
+                <div class="metric-card ${metric.performance}">
+                    <div class="metric-icon">${metric.icon}</div>
+                    <div class="metric-label">
+                        ${metric.label}
+                        <span class="tooltip">
+                            <span class="tooltip-icon">?</span>
+                            <span class="tooltip-text">${metric.tooltip}</span>
+                        </span>
+                    </div>
+                    <div class="metric-value">${metric.value}</div>
+                    <div class="metric-trend ${metric.trend.class}">${metric.trend.symbol}</div>
+                </div>
+            `).join('');
+
+            showView('dashboard');
+        }
+
+        // Historical View
+        function showHistoricalView() {
+            const district = districts.find(d => d.name_en === state.selectedDistrict);
+            const districtName = state.currentLanguage === 'en' ? district.name_en : district.name_mr;
+            document.getElementById('historyDistrictName').textContent = districtName;
+
+            const controls = document.getElementById('chartControls');
+            const metricOptions = [
+                { key: 'workers', label: t('workers') },
+                { key: 'wages', label: t('wages') },
+                { key: 'days', label: t('days') },
+                { key: 'jobCards', label: t('jobCards') }
+            ];
+
+            controls.innerHTML = metricOptions.map(option => `
+                <button class="metric-toggle ${state.selectedMetric === option.key ? 'active' : ''}" data-metric="${option.key}">
+                    ${option.label}
+                </button>
+            `).join('');
+
+            controls.querySelectorAll('.metric-toggle').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    state.selectedMetric = btn.dataset.metric;
+                    showHistoricalView();
+                });
+            });
+
+            renderHistoryChart();
+            showView('historical');
+        }
+
+        function renderHistoryChart() {
+            const data = districtData[state.selectedDistrict];
+            const canvas = document.getElementById('historyChart');
+            const ctx = canvas.getContext('2d');
+
+            // Destroy existing chart
+            if (window.historyChartInstance) {
+                window.historyChartInstance.destroy();
+            }
+
+            const metricMap = {
+                'workers': { key: 'persons_worked', label: t('workers') },
+                'wages': { key: 'wage_payments', label: t('wages') },
+                'days': { key: 'total_days_worked', label: t('days') },
+                'jobCards': { key: 'job_cards_issued', label: t('jobCards') }
+            };
+
+            const metric = metricMap[state.selectedMetric];
+            const chartData = data.map(d => d[metric.key]);
+            const labels = data.map(d => d.month);
+
+            window.historyChartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: metric.label,
+                        data: chartData,
+                        borderColor: '#21808d',
+                        backgroundColor: 'rgba(33, 128, 141, 0.1)',
+                        tension: 0.4,
+                        fill: true,
+                        pointRadius: 6,
+                        pointHoverRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            labels: {
+                                font: { size: 16 },
+                                padding: 20
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                font: { size: 14 }
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                font: { size: 14 }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Comparison View
+        function showComparisonView() {
+            renderComparisonCheckboxes();
+            showView('comparison');
+        }
+
+        function renderComparisonCheckboxes() {
+            const container = document.getElementById('comparisonCheckboxes');
+            container.innerHTML = districts.map(district => {
+                const name = state.currentLanguage === 'en' ? district.name_en : district.name_mr;
+                const checked = state.comparisonDistricts.includes(district.name_en);
+                return `
+                    <label class="checkbox-label ${checked ? 'checked' : ''}">
+                        <input type="checkbox" 
+                               data-district="${district.name_en}" 
+                               ${checked ? 'checked' : ''}
+                               ${state.comparisonDistricts.length >= 3 && !checked ? 'disabled' : ''}>
+                        <span>${name}</span>
+                    </label>
+                `;
+            }).join('');
+
+            container.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('change', (e) => {
+                    const district = e.target.dataset.district;
+                    if (e.target.checked) {
+                        if (state.comparisonDistricts.length < 3) {
+                            state.comparisonDistricts.push(district);
+                        }
+                    } else {
+                        state.comparisonDistricts = state.comparisonDistricts.filter(d => d !== district);
+                    }
+                    renderComparisonCheckboxes();
+                    updateComparisonButton();
+                });
+            });
+        }
+
+        function updateComparisonButton() {
+            const btn = document.getElementById('showComparisonBtn');
+            btn.disabled = state.comparisonDistricts.length < 2;
+        }
+
+        function renderComparisonChart() {
+            const container = document.getElementById('comparisonChartContainer');
+            container.classList.remove('hidden');
+
+            const canvas = document.getElementById('comparisonChart');
+            const ctx = canvas.getContext('2d');
+
+            // Destroy existing chart
+            if (window.comparisonChartInstance) {
+                window.comparisonChartInstance.destroy();
+            }
+
+            const colors = ['#1FB8CD', '#FFC185', '#B4413C'];
+            const datasets = state.comparisonDistricts.map((districtName, index) => {
+                const data = districtData[districtName];
+                const currentData = data[data.length - 1];
+                const district = districts.find(d => d.name_en === districtName);
+                const label = state.currentLanguage === 'en' ? district.name_en : district.name_mr;
+
+                return {
+                    label: label,
+                    data: [
+                        currentData.persons_worked,
+                        currentData.wage_payments,
+                        currentData.total_days_worked,
+                        currentData.job_cards_issued
+                    ],
+                    backgroundColor: colors[index],
+                    borderColor: colors[index],
+                    borderWidth: 2
+                };
+            });
+
+            window.comparisonChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: [t('workers'), t('wages'), t('days'), t('jobCards')],
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            labels: {
+                                font: { size: 16 },
+                                padding: 20
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                font: { size: 14 }
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                font: { size: 14 }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Navigation
+        function goBack() {
+            if (state.currentView === 'districtSelection') {
+                showView('landing');
+            } else if (state.currentView === 'dashboard') {
+                showView('districtSelection');
+            } else if (state.currentView === 'historical' || state.currentView === 'comparison') {
+                showDashboard();
+            }
+        }
+
+        // Event Listeners
+        document.getElementById('langToggle').addEventListener('click', () => {
+            state.currentLanguage = state.currentLanguage === 'en' ? 'mr' : 'en';
+            document.getElementById('langToggle').textContent = state.currentLanguage === 'en' ? 'मराठी' : 'English';
+            updateTranslations();
+            
+            // Refresh current view
+            if (state.currentView === 'districtSelection') {
+                renderDistrictGrid();
+            } else if (state.currentView === 'dashboard') {
+                showDashboard();
+            } else if (state.currentView === 'historical') {
+                showHistoricalView();
+            } else if (state.currentView === 'comparison') {
+                showComparisonView();
+            }
+        });
+
+        document.getElementById('backBtn').addEventListener('click', goBack);
+
+        document.getElementById('findDistrictBtn').addEventListener('click', handleFindDistrict);
+
+        document.getElementById('chooseDistrictBtn').addEventListener('click', () => {
+            renderDistrictGrid();
+            showView('districtSelection');
+        });
+
+        document.getElementById('districtSearch').addEventListener('input', renderDistrictGrid);
+
+        document.getElementById('viewHistoryBtn').addEventListener('click', showHistoricalView);
+
+        document.getElementById('compareBtn').addEventListener('click', () => {
+            state.comparisonDistricts = [];
+            showComparisonView();
+        });
+
+        document.getElementById('showComparisonBtn').addEventListener('click', renderComparisonChart);
+
+        // Initialize
+        updateTranslations();
+        showView('landing');
+    </script>
+</body>
+</html>
