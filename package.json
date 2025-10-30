@@ -1,0 +1,21 @@
+{
+  "name": "mgnrega-maharashtra-portal",
+  "version": "1.0.0",
+  "description": "MGNREGA District Performance Portal for Maharashtra",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "compression": "^1.7.4",
+    "helmet": "^7.0.0",
+    "pg": "^8.11.0",
+    "dotenv": "^16.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
