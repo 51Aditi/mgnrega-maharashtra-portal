@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mgnrega-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+
+databases:
+  - name: mgnrega-db
+    plan: free
